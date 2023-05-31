@@ -1,0 +1,24 @@
+<div class="topbar">
+	<div class="top">
+		<div class="theme-toggler">
+			<span class="material-icons-sharp active">light_mode</span>
+			<span class="material-icons-sharp">dark_mode</span>
+		</div>
+		<div class="profile">
+			<div class="info">
+				{# <a href="{{ path('app_logout') }}">
+					Logout
+				</a> #}
+				{% if app.user %}
+				<p>Hey,
+					<b>{{ app.user.username }}</b>
+				</p>
+				{% endif %}
+				{# <small class="text-muted">Admin</small> #}
+			</div>
+			{# <div class="profile-photo">
+				<img src="images/user_default.png">
+			</div> #}
+		</div>
+	</div>
+</div>

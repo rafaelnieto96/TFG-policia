@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<div class='main-container'>
+
+		<!-- Start Aside Menu -->
+		{% include 'aside.html.twig' %}
+		<!-- End Aside Menu -->
+
+		<!-- Start Top -->
+		{% include 'topbar.html.twig' %}
+		<!-- End Top -->
+
+		<div class="main-content">
+			{% block bodyContent %}{% endblock %}
+		</div>
+
+	</div>
+	
+{% endblock %}
