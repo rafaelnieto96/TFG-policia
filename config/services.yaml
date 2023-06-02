@@ -22,18 +22,6 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
-    App\Service\EventService:
-        arguments:
-            $apiUrl: '%env(resolve:API_URL)%'
-
-    App\Service\UserRankService:
-        arguments:
-            $apiUrl: '%env(resolve:API_URL)%'
-
-    App\Service\AchievementService:
-        arguments:
-            $apiUrl: '%env(resolve:API_URL)%'
-
-    App\Service\BadgeService:
+    App\Service\PostService:
         arguments:
             $apiUrl: '%env(resolve:API_URL)%'

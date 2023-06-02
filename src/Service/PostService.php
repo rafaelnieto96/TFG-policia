@@ -5,7 +5,7 @@ namespace App\Service;
 use Symfony\Component\HttpClient\HttpClient;
 use Exception;
 
-class AchievementService
+class PostService
 {
     private $apiUrl;
     private $httpClient;
@@ -19,10 +19,10 @@ class AchievementService
         ]);
     }
 
-    public function getAchievementsList()
+    public function getEventsList()
     {
         try {
-            $response = $this->httpClient->request('GET', $this->apiUrl . '/achievements');
+            $response = $this->httpClient->request('GET', $this->apiUrl . '/events');
             $data = $response->toArray();
 
             return $data['hydra:member'];
@@ -31,10 +31,10 @@ class AchievementService
         }
     }
 
-    public function getOneAchievement($id)
+    public function getOneEvent($id)
     {
         try {
-            $response = $this->httpClient->request('GET', $this->apiUrl . '/achievements/' . $id);
+            $response = $this->httpClient->request('GET', $this->apiUrl . '/events/' . $id);
             $data = $response->toArray();
 
             return $data;
@@ -43,10 +43,10 @@ class AchievementService
         }
     }
 
-    public function createAchievement($data)
+    public function createEvent($data)
     {
         try {
-            $response = $this->httpClient->request('POST', $this->apiUrl . '/achievements', [
+            $response = $this->httpClient->request('POST', $this->apiUrl . '/events', [
                 'json' => $data,
             ]);
             $data = $response->toArray();
@@ -57,10 +57,10 @@ class AchievementService
         }
     }
 
-    public function updateAchievement($id, $data)
+    public function updateEvent($id, $data)
     {
         try {
-            $response = $this->httpClient->request('PUT', $this->apiUrl . '/achievements/' . $id, [
+            $response = $this->httpClient->request('PUT', $this->apiUrl . '/events/' . $id, [
                 'json' => $data,
             ]);
             $data = $response->toArray();
@@ -74,7 +74,7 @@ class AchievementService
     public function delete($id)
     {
         try {
-            $response = $this->httpClient->request('DELETE', $this->apiUrl . '/achievements/' . $id);
+            $response = $this->httpClient->request('DELETE', $this->apiUrl . '/events/' . $id);
             $data = $response->toArray();
 
             return $data;
