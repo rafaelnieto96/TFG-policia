@@ -86,61 +86,39 @@
             line-height: 1.4;
         }
 
-        /* News section style */
-        .news-section {
-            margin: 40px;
-        }
+    .container {
+        /* width: 99%; */
+        margin: 0 auto;
+        background-color: #fff;
+    }
 
-        .news-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-        }
+    .police-section {
+        /* padding: 400px; */
+        padding-left: 500px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 500px;
+    }
 
-        .news-item {
-            background-color: #f2f2f2;
-            display: flex;
-            align-items: center;
-            height: 300px;
-            border-radius: 0.3rem;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
+    .police-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
 
-        .news-item:hover {
-            box-shadow: 0 2rem 3rem rgb(115, 111, 111);
-        }
+    .police-section p {
+        margin-bottom: 10px;
+    }
 
-        .news-item img {
-            width: 300px;
-            height: 300px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
+    .police-section a {
+        color: #174abd;
+        text-decoration: none;
+    }
 
-        .news-content-title {
-            color: #fff;
-            margin-bottom: 20px;
-            font-size: 30px;
-            font-weight: bold;
-            margin-top: 75px;
-            margin-bottom: 25px;
-            text-align: center;
-        }
+    .police-section a:hover {
+        text-decoration: underline;
+    }
 
-        .news-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: center;
-        }
 
-        .news-subtitle {
-            font-size: 16px;
-            color: #888;
-            line-height: 1.4;
-            overflow-wrap: break-word;
-        }
     </style>
 </head>
 
@@ -165,35 +143,25 @@
             Si nos necesitas, llamanos. Llegamos a cualquier comunidad
         </div>
     </div>
-    <div class="news-section">
-        <h2 class="news-content-title">Últimas Noticias</h2>
-        <div class="news-grid">
-            <div class="news-item">
-                <img src="images/policia-coches.png" alt="News Image" class="news-image">
-                <div class="news-content">
-                    <h3 class="news-title">News Title</h3>
-                    <p class="news-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error molestiae
-                        tempore illum! Eligendi aperiam consectetur eveniet sunt maxime soluta ea minus.</p>
-                </div>
-            </div>
 
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-            <div class="news-item">
-                <!-- News item content goes here -->
-            </div>
-        </div>
+
+    <div class="container">
+    <div class="police-section">
+        <h2>CENTRAL DE LA POLICÍA LOCAL DE VALENCIA</h2>
+        <p>CID, 37<br>
+        46018, VALÈNCIA</p>
+        <p>Teléfono: 96.208.50.92<br>
+        Fax: 96.353.99.60</p>
+        <p>Sitio Web: <a href="http://www.valencia.es">http://www.valencia.es</a><br>
+        Correo electrónico: infoplv@valencia.es</p>
+        <p>Central de la Policia Local de Valencia</p>
+        <p>El edificio, popularmente conocido como el Cuartel de Aviación, fue inaugurado en 1999 y en él se encuentran ubicadas las oficinas de objetos perdidos, parque móvil, Academia de formación, gimnasio, sala de conferencias, museo, gabinete médico, asistencia accidentes, galería de tiro, sala CISE (Centro Integral de Seguridad y Emergencias Sala 092) y cafetería. Tiene una extensión de 9.000 metros cuadrados, dedicando 5.000 metros cuadrados a las instalaciones propias policiales. La Central se encuentra ubicada en la avenida del Cid, número 37.</p>
+        <p>Semanalmente, se realizan visitas guiadas al edificio de colegios y asociaciones.<br>
+        Si Usted desea concertar una visita póngase en contacto con nosotros.</p>
+        <p>Teléfono: 963.840.092 Extensión 5480</p>
     </div>
+</div>
+    
 
     <!-- Rest of your HTML content goes here -->
 
