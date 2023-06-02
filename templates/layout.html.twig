@@ -2,20 +2,10 @@
 
 {% block body %}
 
-	<div class='main-container'>
+	<!-- Start Top -->
+	{% include 'topbar.html.twig' %}
+	<!-- End Top -->
 
-		<!-- Start Aside Menu -->
-		{% include 'aside.html.twig' %}
-		<!-- End Aside Menu -->
+	{% block bodyContent %}{% endblock %}
 
-		<!-- Start Top -->
-		{% include 'topbar.html.twig' %}
-		<!-- End Top -->
-
-		<div class="main-content">
-			{% block bodyContent %}{% endblock %}
-		</div>
-
-	</div>
-	
 {% endblock %}
